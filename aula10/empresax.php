@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require("./funcoes.php");
 
 $funcionarios = lerArquivo("./empresaX.json");
@@ -24,6 +24,14 @@ if(isset($_GET["filtro"]) && $_GET["filtro"] != ""){
 <body>
   <div class="content">
     <h1>Funcionários da empresa X</h1>
+    <div class='toolbar'>
+        <h2>
+            <?php echo 'Olá ' . strtoupper($_SESSION['usuario']) . ' - Login efetutado em: ' .$_SESSION['data_hora']; ?>
+        </h2>
+        <h2>
+           <a class="material-icons" href="processa_login.php?logout=true">logout</a>
+        </h2>
+    </div>
     <p style="text-align: center">
       A empresa é composta por <em> <?= count ($funcionarios) ?> </em> funcionários.
     </p>
