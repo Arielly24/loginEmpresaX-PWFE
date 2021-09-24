@@ -1,0 +1,27 @@
+[
+    {
+        "usuario": "cristiano",
+        "senha": "123456"
+    },
+    {
+        "usuario": "maria",
+        "senha": "654321"
+    },
+    {
+        "usuario": "joao",
+        "senha": "789012"
+    },
+    {
+        "usuario": "arielly",
+        "senha": "242424"
+    },
+
+    {
+        "usuario": "guilherme",
+        "senha": "505050"
+    },
+    {
+        "usuario": "gabriel",
+        "senha": "909090"
+    }
+] 
